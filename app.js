@@ -108,42 +108,64 @@ const newObject = array => ({
 
 
 
-let sum = function(a, b, c, d) {
-  return a + b + c + d;
-};
+// let sum = function(a, b, c, d) {
+//   return a + b + c + d;
+// };
+
+// Refactored 
+
+let sum = (a, b, c, d) => a + b + c + d;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sum(1, 2, 3, 4));
+console.log(sum(1, 2, 3, 4));
 
 
-let objectLit = function() {
-  return {
-    key1: 'value1',
-    key2: 'value2',
-    key3: 'value3',
-  };
-};
+// let objectLit = function() {
+//   return {
+//     key1: 'value1',
+//     key2: 'value2',
+//     key3: 'value3',
+//   };
+// };
+
+//Refactored
+
+let objectLit = () => ({
+  key1: 'value1',
+  key2: 'value2',
+  key3: 'value3',
+})
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(objectLit());
+console.log(objectLit());
 
 
-let sumAndProduct = function(a, b) {
+// let sumAndProduct = function(a, b) {
+//   let sum = a + b;
+//   let product = a * b;
+//   return [sum, product];
+// };
+
+//Refactored
+
+let sumAndProduct = (a, b) => {
   let sum = a + b;
   let product = a * b;
-  return [sum, product];
-};
+  return [sum, product]
+}
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sumAndProduct(3, 9));
+console.log(sumAndProduct(3, 9));
 
 
 let message = function(name) {
   return `Hello, ${name}!`;
 };
 
+//Refactored
+
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(message('Allie'));
+console.log(message('Allie'));
 
 
 let Student = function(name, age, hometown) {
